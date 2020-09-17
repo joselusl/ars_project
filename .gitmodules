@@ -1,0 +1,16 @@
+[submodule "config"]
+	path = config
+	url = https://github.com/joselusl/ars_config
+	branch = master
+[submodule "launchers"]
+	path = launchers
+	url = https://github.com/joselusl/ars_launchers
+	branch = master
+[submodule "packages/ars_robot_models"]
+	path = packages/ars_robot_models
+	url = https://github.com/joselusl/ars_robot_models
+	branch = master
+[submodule "packages/ars_sim_robot"]
+	path = packages/ars_sim_robot
+	url = https://github.com/joselusl/ars_sim_robot
+	branch = master
