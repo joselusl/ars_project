@@ -22,3 +22,11 @@
 	path = packages/ars_sim_environment
 	url = https://github.com/joselusl/ars_sim_environment
 	branch = master
+[submodule "packages/ars_lib_helpers"]
+	path = packages/ars_lib_helpers
+	url = https://github.com/joselusl/ars_lib_helpers
+	branch = master
+[submodule "packages/ars_motion_controller_student"]
+	path = packages/ars_motion_controller_student
+	url = https://github.com/joselusl/ars_motion_controller_student
+	branch = master
