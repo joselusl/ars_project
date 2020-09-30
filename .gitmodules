@@ -30,3 +30,11 @@
 	path = packages/ars_motion_controller_student
 	url = https://github.com/joselusl/ars_motion_controller_student
 	branch = master
+[submodule "packages/ars_sim_collision_detection"]
+	path = packages/ars_sim_collision_detection
+	url = https://github.com/joselusl/ars_sim_collision_detection
+	branch = master
+[submodule "packages/ars_sim_obstacles_detector"]
+	path = packages/ars_sim_obstacles_detector
+	url = https://github.com/joselusl/ars_sim_obstacles_detector
+	branch = master
