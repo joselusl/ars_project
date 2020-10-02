@@ -38,3 +38,7 @@
 	path = packages/ars_sim_obstacles_detector
 	url = https://github.com/joselusl/ars_sim_obstacles_detector
 	branch = master
+[submodule "packages/ars_path_follower_student"]
+	path = packages/ars_path_follower_student
+	url = https://github.com/joselusl/ars_path_follower_student
+	branch = master
