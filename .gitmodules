@@ -42,3 +42,7 @@
 	path = packages/ars_path_follower_student
 	url = https://github.com/joselusl/ars_path_follower_student
 	branch = master
+[submodule "packages/ars_obstacle_avoidance_student"]
+	path = packages/ars_obstacle_avoidance_student
+	url = https://github.com/joselusl/ars_obstacle_avoidance_student
+	branch = master
