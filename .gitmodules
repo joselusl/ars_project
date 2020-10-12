@@ -46,3 +46,11 @@
 	path = packages/ars_obstacle_avoidance_student
 	url = https://github.com/joselusl/ars_obstacle_avoidance_student
 	branch = master
+[submodule "packages/ars_sim_sensor_vel_robot"]
+	path = packages/ars_sim_sensor_vel_robot
+	url = https://github.com/joselusl/ars_sim_sensor_vel_robot
+	branch = master
+[submodule "packages/ars_sim_sensor_pos_robot"]
+	path = packages/ars_sim_sensor_pos_robot
+	url = https://github.com/joselusl/ars_sim_sensor_pos_robot
+	branch = master
