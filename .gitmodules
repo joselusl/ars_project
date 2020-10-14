@@ -50,3 +50,7 @@
 	path = packages/ars_sim_sensors_robot
 	url = https://github.com/joselusl/ars_sim_sensors_robot
 	branch = master
+[submodule "packages/ars_msf_state_estimator_student"]
+	path = packages/ars_msf_state_estimator_student
+	url = https://github.com/joselusl/ars_msf_state_estimator_student
+	branch = master
