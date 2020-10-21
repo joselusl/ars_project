@@ -54,3 +54,7 @@
 	path = packages/ars_msf_state_estimator_student
 	url = https://github.com/joselusl/ars_msf_state_estimator_student
 	branch = master
+[submodule "packages/robot_intelligence_student/ars_msf_slam_student"]
+	path = packages/robot_intelligence_student/ars_msf_slam_student
+	url = https://github.com/joselusl/ars_msf_slam_student
+	branch = master
