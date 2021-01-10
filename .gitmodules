@@ -14,10 +14,6 @@
 	path = packages/simulator/ars_sim_robot
 	url = https://github.com/joselusl/ars_sim_robot
 	branch = master
-[submodule "packages/ars_remote_controller"]
-	path = packages/robot_intelligence_student/ars_remote_controller
-	url = https://github.com/joselusl/ars_remote_controller
-	branch = master
 [submodule "packages/ars_sim_environment"]
 	path = packages/simulator/ars_sim_environment
 	url = https://github.com/joselusl/ars_sim_environment
