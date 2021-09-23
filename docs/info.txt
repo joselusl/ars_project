@@ -4,7 +4,7 @@ repo for ARS
 # INSTALL
 
 #
-sudo apt-get install ros-melodic-teleop-twist-keyboard
+sudo apt install ros-melodic-teleop-twist-keyboard
 
 #
 sudo apt install ros-melodic-hector-trajectory-server

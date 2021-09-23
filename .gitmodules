@@ -22,10 +22,6 @@
 	path = packages/libraries/ars_lib_helpers
 	url = https://github.com/joselusl/ars_lib_helpers
 	branch = master
-[submodule "packages/ars_motion_controller_student"]
-	path = packages/robot_intelligence_student/ars_motion_controller_student
-	url = https://github.com/joselusl/ars_motion_controller_student
-	branch = master
 [submodule "packages/ars_sim_collision_detection"]
 	path = packages/simulator/ars_sim_collision_detection
 	url = https://github.com/joselusl/ars_sim_collision_detection
@@ -34,23 +30,7 @@
 	path = packages/simulator/ars_sim_obstacles_detector
 	url = https://github.com/joselusl/ars_sim_obstacles_detector
 	branch = master
-[submodule "packages/ars_path_follower_student"]
-	path = packages/robot_intelligence_student/ars_path_follower_student
-	url = https://github.com/joselusl/ars_path_follower_student
-	branch = master
-[submodule "packages/ars_obstacle_avoidance_student"]
-	path = packages/robot_intelligence_student/ars_obstacle_avoidance_student
-	url = https://github.com/joselusl/ars_obstacle_avoidance_student
-	branch = master
 [submodule "packages/ars_sim_sensors_robot"]
 	path = packages/simulator/ars_sim_sensors_robot
 	url = https://github.com/joselusl/ars_sim_sensors_robot
-	branch = master
-[submodule "packages/ars_msf_state_estimator_student"]
-	path = packages/robot_intelligence_student/ars_msf_state_estimator_student
-	url = https://github.com/joselusl/ars_msf_state_estimator_student
-	branch = master
-[submodule "packages/robot_intelligence_student/ars_msf_slam_student"]
-	path = packages/robot_intelligence_student/ars_msf_slam_student
-	url = https://github.com/joselusl/ars_msf_slam_student
 	branch = master
