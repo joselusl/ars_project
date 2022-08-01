@@ -4,10 +4,29 @@ repo for ARS
 # INSTALL
 
 #
-sudo apt install ros-melodic-teleop-twist-keyboard
+sudo apt install python-is-python3
+
+
+
+# INSTALL ROS Noetic
+http://wiki.ros.org/noetic/Installation/Ubuntu
+
+
+
+# INSTALL ROS PACKAGES
 
 #
-sudo apt install ros-melodic-hector-trajectory-server
+sudo apt install ros-noetic-teleop-twist-keyboard
+
+#
+sudo apt install ros-noetic-hector-trajectory-server
 
 
+
+# INSTALL Python packages
+
+sudo apt install python3-pip
+
+
+# pip install os-sys
 
