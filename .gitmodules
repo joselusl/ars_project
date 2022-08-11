@@ -38,3 +38,7 @@
 	path = packages/simulator/ars_sim_mapper
 	url = https://github.com/joselusl/ars_sim_mapper
 	branch = master
+[submodule "packages/simulator/ars_optitrack_transf"]
+	path = packages/simulator/ars_optitrack_transf
+	url = https://github.com/joselusl/ars_optitrack_transf
+	branch = master

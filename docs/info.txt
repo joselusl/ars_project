@@ -25,8 +25,13 @@ sudo apt install ros-noetic-hector-trajectory-server
 
 # INSTALL Python packages
 
+# PIP
 sudo apt install python3-pip
 
 
-# pip install os-sys
+# scipy
+pip install scipy
 
+
+# gtsam
+pip install gtsam
