@@ -32,6 +32,11 @@ sudo apt install python3-pip
 # scipy
 pip install scipy
 
+# 
+pip install av==9.2.0
+pip install cv_bridge==1.16.0
+pip install tellopy==0.6.0
+
 
 # gtsam
-pip install gtsam
+# pip install gtsam
