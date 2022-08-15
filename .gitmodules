@@ -46,3 +46,7 @@
 	path = packages/simulator/ars_dji_tello_driver_ros
 	url = https://github.com/joselusl/ars_dji_tello_driver_ros
 	branch = master
+[submodule "packages/simulator/ars_robot_msgs"]
+	path = packages/simulator/ars_robot_msgs
+	url = https://github.com/joselusl/ars_robot_msgs
+	branch = master
