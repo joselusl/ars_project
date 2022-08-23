@@ -15,6 +15,9 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 
 # INSTALL ROS PACKAGES
 
+# Optitrack
+sudo apt install ros-noetic-vrpn-client-ros
+
 #
 sudo apt install ros-noetic-teleop-twist-keyboard
 
