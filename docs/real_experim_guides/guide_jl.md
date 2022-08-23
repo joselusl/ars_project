@@ -33,6 +33,11 @@ Connect your own laptop:
 
 # DRONESLAB02
 
+0. Log in
+    - Username : master_course
+    - Password : master!uni
+
+
 1. Check connections
 
 2. Run in every terminal
@@ -67,3 +72,4 @@ Connect your own laptop:
   - Run in every terminal
     - source $ARS_PROJECT/setup.bash 192.168.30.129
 
+5. Run everything
