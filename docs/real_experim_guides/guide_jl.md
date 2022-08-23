@@ -35,7 +35,10 @@ Connect your own laptop:
 
 1. Check connections
 
-2. Launch
+2. Run in every terminal
+    source $ARS_PROJECT/setup.bash 192.168.30.129
+
+3. Launch
 - ROS master
   - roscore
 - Optitrack ROS Node
