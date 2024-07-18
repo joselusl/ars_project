@@ -4,3 +4,8 @@
 # Robot intelligence
 packages/robot_intelligence_student/ars_*
 
+# Build
+build
+log
+install
+
