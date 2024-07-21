@@ -6,47 +6,48 @@
 	path = launchers
 	url = https://github.com/joselusl/ars_launchers
 	branch = master
-[submodule "packages/ars_robot_models"]
+[submodule "packages/libraries/ars_lib_helpers"]
+	path = packages/libraries/ars_lib_helpers
+	url = https://github.com/joselusl/ars_lib_helpers
+	branch = main
+[submodule "packages/common/ars_robot_msgs"]
+	path = packages/common/ars_robot_msgs
+	url = https://github.com/joselusl/ars_robot_msgs
+	branch = main
+[submodule "packages/simulator/ars_sim_robot"]
+	path = packages/simulator/ars_sim_robot
+	url = https://github.com/joselusl/ars_sim_robot
+	branch = main
+[submodule "packages/simulator/ars_robot_models"]
 	path = packages/simulator/ars_robot_models
 	url = https://github.com/joselusl/ars_robot_models
 	branch = master
-[submodule "packages/ars_sim_robot"]
-	path = packages/simulator/ars_sim_robot
-	url = https://github.com/joselusl/ars_sim_robot
-	branch = master
-[submodule "packages/ars_sim_environment"]
+[submodule "packages/simulator/ars_sim_environment"]
 	path = packages/simulator/ars_sim_environment
 	url = https://github.com/joselusl/ars_sim_environment
-	branch = master
-[submodule "packages/ars_lib_helpers"]
-	path = packages/libraries/ars_lib_helpers
-	url = https://github.com/joselusl/ars_lib_helpers
-	branch = master
-[submodule "packages/ars_sim_collision_detection"]
+	branch = main
+[submodule "packages/simulator/ars_sim_collision_detection"]
 	path = packages/simulator/ars_sim_collision_detection
 	url = https://github.com/joselusl/ars_sim_collision_detection
 	branch = master
-[submodule "packages/ars_sim_obstacles_detector"]
+[submodule "packages/simulator/ars_sim_obstacles_detector"]
 	path = packages/simulator/ars_sim_obstacles_detector
 	url = https://github.com/joselusl/ars_sim_obstacles_detector
-	branch = master
-[submodule "packages/ars_sim_sensors_robot"]
+	branch = main
+[submodule "packages/simulator/ars_sim_sensors_robot"]
 	path = packages/simulator/ars_sim_sensors_robot
 	url = https://github.com/joselusl/ars_sim_sensors_robot
 	branch = master
 [submodule "packages/simulator/ars_sim_mapper"]
 	path = packages/simulator/ars_sim_mapper
 	url = https://github.com/joselusl/ars_sim_mapper
-	branch = master
-[submodule "packages/simulator/ars_optitrack_transf"]
+	branch = main
+[submodule "packages/simulator_inlab/ars_optitrack_transf"]
 	path = packages/simulator_inlab/ars_optitrack_transf
 	url = https://github.com/joselusl/ars_optitrack_transf
 	branch = master
-[submodule "packages/simulator/ars_dji_tello_driver_ros"]
-	path = packages/simulator_inlab
+[submodule "packages/simulator_inlab/ars_dji_tello_driver_ros"]
+	path = packages/simulator_inlab/ars_dji_tello_driver_ros
 	url = https://github.com/joselusl/ars_dji_tello_driver_ros
 	branch = master
-[submodule "packages/simulator/ars_robot_msgs"]
-	path = packages/common/ars_robot_msgs
-	url = https://github.com/joselusl/ars_robot_msgs
-	branch = master
+
