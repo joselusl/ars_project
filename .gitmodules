@@ -1,11 +1,11 @@
 [submodule "config"]
 	path = config
 	url = https://github.com/joselusl/ars_config
-	branch = master
+	branch = main
 [submodule "launchers"]
 	path = launchers
 	url = https://github.com/joselusl/ars_launchers
-	branch = master
+	branch = main
 [submodule "packages/libraries/ars_lib_helpers"]
 	path = packages/libraries/ars_lib_helpers
 	url = https://github.com/joselusl/ars_lib_helpers
