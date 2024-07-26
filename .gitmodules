@@ -46,11 +46,6 @@
 	path = ars_robot_sim_inlab/packages/ars_optitrack_transf
 	url = https://github.com/joselusl/ars_optitrack_transf
 	branch = master
-[submodule "ars_robot/packages/simulator_inlab/ars_dji_tello_driver_ros"]
-	path = ars_robot_sim_inlab/packages/ars_dji_tello_driver_ros
-	url = https://github.com/joselusl/ars_dji_tello_driver_ros
-	branch = master
-
 [submodule "ars_robot_sim_inlab/packages/ars_dji_tello_driver_ros"]
 	path = ars_robot_sim_inlab/packages/ars_dji_tello_driver_ros
 	url = https://github.com/joselusl/ars_dji_tello_driver_ros
