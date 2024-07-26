@@ -1,0 +1,20 @@
+static:
+- circles:
+    - id: 1
+      child_frame_id: "static1"
+      sizes: [0.30, 0.30, 4.0]
+    - id: 2
+      child_frame_id: "static2"
+      sizes: [0.40, 0.40, 4.0]
+    - id: 3
+      child_frame_id: "static3"
+      sizes: [0.40, 0.40, 4.0]
+    - id: 4
+      child_frame_id: "static4"
+      sizes: [0.40, 0.40, 4.0]
+dynamic:
+- circles:
+    - id: 1
+      child_frame_id: "dynamic1"
+      sizes: [0.40, 0.40, 4.0]
+
