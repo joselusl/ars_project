@@ -1,0 +1,151 @@
+# source
+source $WORKSPACE/install/setup.bash
+
+# compile
+colcon build
+
+# clean
+rm -rf build/ install/ log/
+
+
+# rqt tools
+rqt
+rqt_graph
+rqt_plot
+
+
+
+
+## SIMULATED EXPERIMENTS
+
+# Simulator robot (if simulated experiment)
+# DJI M100 Flying
+ros2 launch ars_launchers robot_simulator.launch.py robot_sim_description_yaml_file:="sim_robot/config_sim_robot_dji_m100.yaml" robot_init_status_flying:="True"
+# DJI M100 Landed
+ros2 launch ars_launchers robot_simulator.launch.py robot_sim_description_yaml_file:="sim_robot/config_sim_robot_dji_m100.yaml" robot_init_status_flying:="False"
+# DJI Tello Flying
+ros2 launch ars_launchers robot_simulator.launch.py robot_sim_description_yaml_file:="sim_robot/config_sim_robot_dji_tello.yaml" robot_init_status_flying:="True"
+# DJI Tello Landed
+ros2 launch ars_launchers robot_simulator.launch.py robot_sim_description_yaml_file:="sim_robot/config_sim_robot_dji_tello.yaml" robot_init_status_flying:="False"
+
+
+# Simulator environment (if simulated experiment)
+ros2 launch ars_launchers environment_simulator.launch.py
+# Env empty
+ros2 launch ars_launchers environment_simulator.launch.py environment_description_yaml_file:="sim_environment/obstacles_env_empty.yaml"
+# Env 00 - Default
+ros2 launch ars_launchers environment_simulator.launch.py environment_description_yaml_file:="sim_environment/obstacles_env_00.yaml"
+# Env 01
+ros2 launch ars_launchers environment_simulator.launch.py environment_description_yaml_file:="sim_environment/obstacles_env_01.yaml"
+# Env 02
+ros2 launch ars_launchers environment_simulator.launch.py environment_description_yaml_file:="sim_environment/obstacles_env_02.yaml"
+# Env 03
+ros2 launch ars_launchers environment_simulator.launch.py environment_description_yaml_file:="sim_environment/obstacles_env_03.yaml"
+# Env 04
+ros2 launch ars_launchers environment_simulator.launch.py environment_description_yaml_file:="sim_environment/obstacles_env_04.yaml"
+# Aerolab Env 01
+ros2 launch ars_launchers environment_simulator.launch.py environment_description_yaml_file:="sim_environment/obstacles_env_aerolab_01.yaml"
+# Aerolab Env 02
+ros2 launch ars_launchers environment_simulator.launch.py environment_description_yaml_file:="sim_environment/obstacles_env_aerolab_02.yaml"
+
+
+
+
+## REAL EXPERIMENTS
+
+# Config for real experiments in every terminal (if real experiment) -> TODO Check master IP
+# Option 1 -> preferred
+source $ARS_PROJECT/setup.bash 192.168.30.129
+# Option 2
+# Master IP
+export ROS_MASTER_URI=http://192.168.30.129:11311
+export ROS_IP=192.168.30.129
+# Own IP (check on your virtual machine)
+export ROS_HOSTNAME=192.168.30.XX
+
+
+# Optitrack node -> In External computer (if real experiment)
+roslaunch ars_launchers optitrack_node.launch server:=192.168.30.105
+
+
+# DJI Tello driver (if real experiment)
+roslaunch ars_launchers dji_tello_driver_ros.launch connect_to_tello_wifi_auto:=False
+
+
+
+# Optitrack transformation (if real experiment)
+
+# Obstacles static
+roslaunch ars_launchers optitrack_transf_environment_static.launch optitrack_transf_environment_description_yaml_file:="$(rospack find ars_config)/config/optitrack_transf/optitrack_transf_environment.yaml" obstacles_label:="static"
+
+# Obstacles dynamic
+roslaunch ars_launchers optitrack_transf_environment_dynamic.launch optitrack_transf_environment_description_yaml_file:="$(rospack find ars_config)/config/optitrack_transf/optitrack_transf_environment.yaml" obstacles_label:="dynamic"
+
+# Aerial Robot
+roslaunch ars_launchers optitrack_transf_robot.launch meas_robot_frame:="optitrack_robot_base_link" meas_world_frame:="world"
+
+
+
+
+
+
+
+
+## SIMULATORS NEEDED FOR EXPERIMENTS (BOTH SIMULATED AND REAL)
+
+# Simulator collision detection (optional)
+ros2 launch ars_launchers collision_detection_simulator.launch.py
+
+
+# Sim obstacle detector
+# Long range -> DJI M100
+ros2 launch ars_launchers obstacles_detector_simulator.launch.py sim_obstacles_detector_params_yaml_file:="sim_obstacles_detector/config_sim_obstacles_detector_long_range.yaml"
+# Short range -> DJI Tello
+ros2 launch ars_launchers obstacles_detector_simulator.launch.py sim_obstacles_detector_params_yaml_file:="sim_obstacles_detector/config_sim_obstacles_detector_short_range.yaml"
+
+
+# Simulator robot sensors
+ros2 launch ars_launchers robot_simulator_sensors_robot.launch.py
+
+
+
+
+
+
+## VISUALIZATION
+
+# Robot urdf model for visualization (optional)
+# DJI M100
+ros2 launch ars_launchers robot_urdf_dji_m100.launch.py
+# DJI Tello
+ros2 launch ars_launchers robot_urdf_dji_tello.launch.py
+
+
+# rviz for visualization
+# config by default
+rviz2
+# with ars config
+rosrun rviz rviz -d $(rospack find ars_config)/config/rviz_config/rviz_conf_sim.rviz
+
+
+
+
+
+## SIMULATOR ROBOT INTELLIGENCE COMPONENTS
+
+# Environment mapper simulator (only if not SLAM)
+ros2 launch ars_launchers mapper_simulator.launch.py
+
+
+
+
+
+## INPUTS
+
+# Remove obstacles dynamic
+ros2 topic pub -1 /simulator/sim_environment/flag_dynamic_obstacles std_msgs/Bool "data: false"
+# Add obstacles dynamic
+ros2 topic pub -1 /simulator/sim_environment/flag_dynamic_obstacles std_msgs/Bool "data: true"
+
+
+
