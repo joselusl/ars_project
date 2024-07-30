@@ -3,18 +3,16 @@
 echo "Publishing trajectory":
 
 
-rostopic pub -1 /robot_trajectory_ref nav_msgs/Path "header:
-  seq: 0
+ros2 topic pub -1 /robot_trajectory_ref nav_msgs/Path "header:
   stamp:
-    secs: 0
-    nsecs: 0
+    sec: 0
+    nanosec: 0
   frame_id: 'world'
 poses:
 - header:
-    seq: 0
     stamp:
-      secs: 0
-      nsecs: 0
+      sec: 0
+      nanosec: 0
     frame_id: 'world'
   pose:
     position:
@@ -27,10 +25,9 @@ poses:
       z: 0.0
       w: 1.0
 - header:
-    seq: 0
     stamp:
-      secs: 0
-      nsecs: 0
+      sec: 0
+      nanosec: 0
     frame_id: 'world'
   pose:
     position:
@@ -43,10 +40,9 @@ poses:
       z: 1.0
       w: 0.0
 - header:
-    seq: 0
     stamp:
-      secs: 0
-      nsecs: 0
+      sec: 0
+      nanosec: 0
     frame_id: 'world'
   pose:
     position:
