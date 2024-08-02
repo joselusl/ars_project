@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ars_robot_sim</name>
+  <version>0.0.1</version>
+  <description>The ars_robot_sim metapackage</description>
+
+  <maintainer email="joseluis.sanlop@gmail.com">Jose Luis SANCHEZ-LOPEZ</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>ars_robot_sim_config</depend>
+  <depend>ars_robot_sim_launchers</depend>
+
+  <depend>ars_sim_robot</depend>
+  <depend>ars_robot_models</depend>
+  <depend>ars_sim_environment</depend>
+  <depend>ars_sim_collision_detection</depend>
+
+  <depend>ars_sim_obstacles_detector</depend>
+  <depend>ars_sim_sensors_robot</depend>
+
+  <depend>ars_sim_mapper</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>
