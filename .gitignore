@@ -9,3 +9,6 @@ build
 log
 install
 
+VS
+.vscode
+
