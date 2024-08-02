@@ -1,11 +1,3 @@
-[submodule "ars_robot/config"]
-	path = ars_robot_sim/config
-	url = https://github.com/joselusl/ars_config
-	branch = main
-[submodule "ars_robot/launchers"]
-	path = ars_robot_sim/launchers
-	url = https://github.com/joselusl/ars_launchers
-	branch = main
 [submodule "ars_common/packages/libraries/ars_lib_helpers"]
 	path = ars_common/packages/libraries/ars_lib_helpers
 	url = https://github.com/joselusl/ars_lib_helpers
@@ -13,6 +5,14 @@
 [submodule "ars_common/packages/msgs/ars_robot_msgs"]
 	path = ars_common/packages/msgs/ars_robot_msgs
 	url = https://github.com/joselusl/ars_robot_msgs
+	branch = main
+[submodule "ars_robot_sim/config"]
+	path = ars_robot_sim/config
+	url = https://github.com/joselusl/ars_robot_sim_config
+	branch = main
+[submodule "ars_robot_sim/launchers"]
+	path = ars_robot_sim/launchers
+	url = https://github.com/joselusl/ars_robot_sim_launchers
 	branch = main
 [submodule "ars_robot_sim/packages/ars_sim_robot"]
 	path = ars_robot_sim/packages/ars_sim_robot
