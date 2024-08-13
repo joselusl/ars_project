@@ -9,6 +9,6 @@ build
 log
 install
 
-VS
+# VS Code
 .vscode
 
